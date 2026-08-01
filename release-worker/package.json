@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "dev": "node init && wrangler dev",
     "typecheck": "tsc --noEmit",
     "migrate": "wrangler d1 migrations apply terminal-browser-stats --remote",
     "migrate:local": "wrangler d1 migrations apply terminal-browser-stats --local"

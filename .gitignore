@@ -31,8 +31,6 @@ lcov.info
 Thumbs.db
 
 # Local environment / secrets
-.env
-.env.*
 
 # Node
 node_modules/
@@ -50,3 +48,4 @@ dist-release/
 
 .dev.vars
 .wrangler/
+config.bat
