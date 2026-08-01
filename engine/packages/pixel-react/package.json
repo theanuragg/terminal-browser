@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run build:native && tsc -p tsconfig.json",
-    "build:native": "cargo build -p pixel-node && mkdir -p native && rm -f native/pixel.node && cp ../../target/debug/libpixel_node.dylib native/pixel.node"
+    "build": "node init && npm run build:native && tsc -p tsconfig.json",
+    "build:native": "node init && cargo build -p pixel-node && mkdir -p native && rm -f native/pixel.node && cp ../../target/debug/libpixel_node.dylib native/pixel.node"
   },
   "dependencies": {
     "react-reconciler": "^0.29.2"

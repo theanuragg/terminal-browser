@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "tsx src/main.tsx",
+    "start": "node init && tsx src/main.tsx",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
